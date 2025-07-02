@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20751ae08f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-center gap-2" href="#">
+                <div class="nav-img">
+                    <img src="./../images/logo.png" alt="logo">
+                </div>
+                <div class="logo-text text-white">
+                    <h1 class="mb-2 fs-6">Weather</h1>
+                    <p class="fs-7 m-0">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white" href="./../index.html" target="">Home</a>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="w-100 p-3 rounded-pill contact-path">
+                <a class="text-decoration-none text-secondary pe-2 contact-home-text" href="./../index.html">Home</a>
+                <i class="fa fa-arrow-right text-secondary pe-2"></i>
+                <p class="d-inline">Contact</p>
+            </div>
+        </div>
+        <div class="main-contact-section py-5">
+            <div class="container">
+                <div class="row gap-5">
+                    <div class="col-md-5 align-self-start rounded-2 p-3" id="map-div">
+                        <div class="map">
+
+                        </div>
+                        <div class="contact">
+                            <ul class="list-unstyled">
+                                <li class="mb-3 text-white"><i class="fa-solid fa-location-dot pe-2"></i> Company Name
+                                    INC.
+                                    2803 Avenue Street, Los Angeles </li>
+                                <li class="mb-3 text-white"><i class="fa-solid fa-phone pe-2"></i> +201125827101</li>
+                                <li class="mb-3 text-white"><i class="fa-solid fa-envelope pe-2"></i>
+                                    M.mohamedkhalaf240@gmail.com </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1 class="text-white">Contact Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit itaque quis corrupti. Corrupti
+                            id adipisci voluptates, labore accusamus quos non reprehenderit sunt! Accusantium voluptatem
+                            ipsa consequatur. Quis ipsam adipisci dolorum.</p>
+                            <div class="contact-form row pt-4 row-gap-2 justify-content-end">
+                                <div class="col-md-6 col-12 p-0 pe-1"><input type="text" class="rounded-pill bg-transparent w-100 p-3" placeholder="Your Name..."></div>
+                                <div class="col-md-6 col-12 p-0 ps-1"><input type="text" class="rounded-pill bg-transparent w-100 p-3" placeholder="Email Address..."></div>
+                                <div class="col-md-6 col-12 p-0 pe-1"><input type="text" class="rounded-pill bg-transparent w-100 p-3" placeholder="Company..."></div>
+                                <div class="col-md-6 col-12 p-0 ps-1"><input type="text" class="rounded-pill bg-transparent w-100 p-3" placeholder="Website..."></div>
+                                <textarea name="" class="col-12 rounded-5 bg-transparent p-3" placeholder="Message..."></textarea>
+                                <button class="btn col-2 rounded-5">Submit</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="first d-flex justify-content-between align-items-center mb-5 gap-5">
+                <div class="search-bar">
+
+                    <input type="text" class="w-100 z-0 rounded-pill border-0 bg-transparent"
+                        placeholder="Enter your email to subsrcibe...">
+                    <button>Subscribe</button>
+                </div>
+
+                <ul class="list-unstyled d-flex gap-3 m-0">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-google"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+
+                </ul>
+            </div>
+            <p class="text-white"">
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+        </div>
+    </footer>
+    <script src=" ./../js/bootstrap.bundle.min.js">
+    </script>
+                <script src="./../js/index.js"></script>
+</body>
+
+</html>

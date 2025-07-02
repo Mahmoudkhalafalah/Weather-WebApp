@@ -1,0 +1,200 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.fs-7 {
+    font-size: 0.7rem;
+}
+
+.nav-link,
+.active {
+    font-size: 14px;
+    padding: 5px 25px !important;
+    transition: all 400ms;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+.nav-link:hover,
+.active {
+    color: #009ad8 !important;
+    border-color: #009ad8;
+}
+
+.hero {
+    background-image: url(./../images/banner.png);
+    padding: 70px 0;
+    min-height: 350px;
+}
+
+/* form{
+    height: 40px;
+    padding: 10px;
+}
+input[type = "text"]{
+    height: 100%;
+    flex: 1;
+}
+input[type = "button"]{
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+} */
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    background-color: #1e202b;
+    border-radius: 40px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-bar button {
+    background-color: #00b4ff;
+    color: white;
+    border: none;
+    padding: 0 40px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.forecast {
+    transform: translateY(-20%);
+}
+
+.today,
+.tomorrow2 {
+    background-color: #323544;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.today-temp {
+    font-size: 80px;
+}
+
+.forecast-metrics img {
+    display: inline;
+    width: 7%;
+}
+
+.forecast-metrics span {
+    padding-right: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+.tomorrow {
+    background-color: #262936;
+}
+
+.weather-status {
+    color: #00b4ff;
+}
+
+footer {
+    padding: 70px 0;
+    background-color: #262936;
+}
+
+footer li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    color: #00b4ff;
+    border-radius: 50%;
+    background-color: #1e202b;
+    transition: all 400ms
+}
+
+footer li:hover {
+    color: white;
+    background-color: #00b4ff;
+    cursor: pointer;
+}
+
+.contact-home-text:hover {
+    text-decoration: underline !important;
+}
+
+.contact-path {
+    background-color: #262936;
+}
+
+.map {
+    height: 220px;
+}
+
+#map-div {
+    background-color: #262936;
+}
+
+.contact i {
+    color: #00b4ff;
+}
+
+.contact-form input {
+    border: 2px solid #393c48;
+    height: 50px;
+    color: white;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    border: 2px solid #393c48;
+    color: white;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    outline: none;
+    border-color: #00b4ff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: none;
+    outline: 2px solid #00b4ff;
+}
+
+.contact-form button {
+    --bs-btn-color: white;
+    --bs-btn-bg: #00b4ff;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #00b4ff;
+
+}
