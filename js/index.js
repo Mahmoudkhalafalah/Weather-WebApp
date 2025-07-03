@@ -15,7 +15,8 @@ var tomorrow2StatusIcon = document.querySelector("#tomorrow2StatusIcon");
 var tomorrow2Status = document.querySelector("#tomorrow2Status");
 var tomorrow2MaxTemp = document.querySelector("#tomorrow2MaxTemp");
 var tomorrow2MinTemp = document.querySelector("#tomorrow2MinTemp");
-var searchBar = document.querySelector("#searchBar");
+var searchBar = document.querySelector("#searchBar"); 
+
 
 request.open("GET", "https://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=Giza&days=3&aqi=no&alerts=no");
 
