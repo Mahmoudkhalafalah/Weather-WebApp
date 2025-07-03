@@ -17,7 +17,7 @@ var tomorrow2MaxTemp = document.querySelector("#tomorrow2MaxTemp");
 var tomorrow2MinTemp = document.querySelector("#tomorrow2MinTemp");
 var searchBar = document.querySelector("#searchBar");
 
-request.open("GET", "http://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=Giza&days=3&aqi=no&alerts=no");
+request.open("GET", "https://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=Giza&days=3&aqi=no&alerts=no");
 
 request.send();
 request.responseType = "json"
@@ -62,10 +62,10 @@ request.addEventListener("load", function () {
 })
 searchBar.addEventListener("input", function () {
     if(searchBar.value.trim()){
-        request.open("GET", `http://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=${searchBar.value}&days=3&aqi=no&alerts=no`);
+        request.open("GET", `https://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=${searchBar.value}&days=3&aqi=no&alerts=no`);
     }
     else{
-        request.open("GET", "http://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=London&days=3&aqi=no&alerts=no");
+        request.open("GET", "https://api.weatherapi.com/v1/forecast.json?key=2f8decbf816447469f8142742242404&q=London&days=3&aqi=no&alerts=no");
     }
     request.send();
     request.responseType = "json";
